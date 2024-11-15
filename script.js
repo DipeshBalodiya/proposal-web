@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const yesBtn = document.getElementById("yes-btn");
     const noBtn = document.getElementById("no-btn");
   
-    let noBtnClicks = 0; // Counter to track how many times "No" button has been clicked
+    let noBtnClicks = 0;
   
     noBtn.addEventListener("click", () => {
       noBtnClicks++;
       
-      // If "No" has been clicked twice, make it start moving
+     
       if (noBtnClicks === 2) {
         noBtn.addEventListener("mouseover", () => {
           const randomX = Math.random() * 80;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
       
-      // After 2 clicks, redirect to the reject page
+     
       window.location.href = "reject.html";
     });
   
