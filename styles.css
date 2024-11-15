@@ -1,104 +1,104 @@
-/* General body styling */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('images/proposal.jpg'); /* Path to the image */
+    background-image: url('images/proposal.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
   }
   
-  /* Main container styling */
+  
   .container {
     margin-top: 10%;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for readability */
+    background: rgba(0, 0, 0, 0.6); 
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
-    width: 80%; /* Responsive width */
-    max-width: 500px; /* Limit the width on larger screens */
+    width: 80%; 
+    max-width: 500px;
   }
   
-  /* Headline styling */
+  
   h1 {
     font-size: 2.5em;
-    color: #ffebcd; /* Light beige for romantic tone */
+    color: #ffebcd; 
     margin-bottom: 20px;
   }
   
-  /* Button container */
+  
   .buttons {
     margin-top: 20px;
   }
   
-  /* Buttons styling */
+  
   button {
-    font-size: 1.2em; /* Reduced font size */
-    padding: 8px 16px; /* Smaller padding */
-    margin: 8px; /* Reduced margin */
+    font-size: 1.2em;
+    padding: 8px 16px; 
+    margin: 8px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color: #ffffff; /* White text */
+    color: #ffffff; 
     transition: transform 0.2s, background-color 0.3s;
-    width: auto; /* Default width unless modified by media queries */
+    width: auto; 
   }
   
-  /* Yes button */
+  
   #yes-btn {
-    background-color: #6a9f58; /* Soft green */
+    background-color: #6a9f58; 
   }
   
-  /* No button */
+ 
   #no-btn {
-    background-color: #b54e4a; /* Soft red */
+    background-color: #b54e4a; 
   }
   
-  /* Hover effect for buttons */
+ 
   button:hover {
     transform: scale(1.1);
     background-color: #ffffff;
-    color: #333; /* Switch to dark text */
+    color: #333; 
   }
   
-  /* Responsive adjustments for medium devices */
+  
   @media (max-width: 768px) {
     h1 {
-      font-size: 2em; /* Smaller headline font size */
+      font-size: 2em; 
     }
   
     .container {
-      margin-top: 15%; /* Adjust spacing for smaller screens */
-      width: 90%; /* More flexible width for mobile */
+      margin-top: 15%;
+      width: 90%; 
     }
   
     button {
-      font-size: 1em; /* Smaller font size for buttons */
-      padding: 6px 12px; /* Reduced padding */
+      font-size: 1em; 
+      padding: 6px 12px; 
     }
   }
   
-  /* Responsive adjustments for small devices */
+ 
   @media (max-width: 480px) {
     h1 {
-      font-size: 1.8em; /* Further reduce headline font size */
+      font-size: 1.8em;
     }
   
     button {
-      font-size: 0.9em; /* Smallest font size for buttons */
-      padding: 5px 10px; /* Minimal padding for compact buttons */
-      width: 100%; /* Full-width buttons for better usability */
-      margin: 5px 0; /* Adjusted margin for stacked layout */
+      font-size: 0.9em; 
+      padding: 5px 10px; 
+      width: 100%; 
+      margin: 5px 0; 
     }
   
     .container {
       margin-top: 20%;
     }
   }
-  /* Footer Styling */
+ 
 footer {
     position: fixed;
     bottom: 0;
