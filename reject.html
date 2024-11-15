@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejected</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffc0cb;
+      margin: 0;
+      padding: 0;
+    }
+    video{
+      margin-top: 5%;
+      margin-bottom: none;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff6347; /* Tomato color for the rejection tone */
+      margin-top: 6%;
+    }
+
+    h3 {
+      color: #ff6347; /* Tomato color for the rejection tone */
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    /* Yes button */
+    #yes-btn {
+      background-color: #6a9f58; /* Soft green */
+    }
+
+    /* No button */
+    #no-btn {
+      background-color: #b54e4a; /* Soft red */
+    }
+
+    /* Hover effect for buttons */
+    button:hover {
+      transform: scale(1.1);
+      background-color: #ffffff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop controlslist="nodownload nofastforward noremoteplayback" disablePictureInPicture>
+    <source src="videos/cry.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h1>Sorry, but you rejected my proposal! 😞</h1>
+  <h3>yes! bol doo.. plz...</h3>
+  
+  <div class="buttons">
+    <button id="yes-btn">Yes</button>
+    <button id="no-btn">No</button>
+  </div>
+  <footer>
+    <p>&copy; 2024 Design and Developed by <span>@code_a632</span></p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const yesBtn = document.getElementById("yes-btn");
+      const noBtn = document.getElementById("no-btn");
+
+      // Function to move the "No" button randomly
+      const moveNoButton = () => {
+        const randomX = Math.random() * 80; // Random position in viewport width
+        const randomY = Math.random() * 80; // Random position in viewport height
+        noBtn.style.position = "absolute"; // Set the button to absolute positioning
+        noBtn.style.left = `${randomX}vw`;
+        noBtn.style.top = `${randomY}vh`; // Move the button away from the cursor
+      };
+
+      // Track the mouse position and move the button if the cursor is close
+      noBtn.addEventListener("mousemove", (event) => {
+        const buttonRect = noBtn.getBoundingClientRect();
+        const buttonCenterX = buttonRect.left + buttonRect.width / 2;
+        const buttonCenterY = buttonRect.top + buttonRect.height / 2;
+        const distance = Math.sqrt(
+          Math.pow(event.clientX - buttonCenterX, 2) + Math.pow(event.clientY - buttonCenterY, 2)
+        );
+
+        const proximityThreshold = 100; // Distance at which button moves
+
+        // If the cursor is within the proximity threshold, move the button
+        if (distance < proximityThreshold) {
+          moveNoButton();
+        }
+      });
+
+      // Redirect to the "party.html" page when "Yes" is clicked
+      yesBtn.addEventListener("click", () => {
+        window.location.href = "party.html";
+      });
+
+      // Redirect to the "index.html" page when "No" is clicked
+      noBtn.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    });
+  </script>
+</body>
+</html>

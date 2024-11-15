@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('images/proposal.jpg'); /* Path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  /* Main container styling */
+  .container {
+    margin-top: 10%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%; /* Responsive width */
+    max-width: 500px; /* Limit the width on larger screens */
+  }
+  
+  /* Headline styling */
+  h1 {
+    font-size: 2.5em;
+    color: #ffebcd; /* Light beige for romantic tone */
+    margin-bottom: 20px;
+  }
+  
+  /* Button container */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  /* Buttons styling */
+  button {
+    font-size: 1.2em; /* Reduced font size */
+    padding: 8px 16px; /* Smaller padding */
+    margin: 8px; /* Reduced margin */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    transition: transform 0.2s, background-color 0.3s;
+    width: auto; /* Default width unless modified by media queries */
+  }
+  
+  /* Yes button */
+  #yes-btn {
+    background-color: #6a9f58; /* Soft green */
+  }
+  
+  /* No button */
+  #no-btn {
+    background-color: #b54e4a; /* Soft red */
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #333; /* Switch to dark text */
+  }
+  
+  /* Responsive adjustments for medium devices */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em; /* Smaller headline font size */
+    }
+  
+    .container {
+      margin-top: 15%; /* Adjust spacing for smaller screens */
+      width: 90%; /* More flexible width for mobile */
+    }
+  
+    button {
+      font-size: 1em; /* Smaller font size for buttons */
+      padding: 6px 12px; /* Reduced padding */
+    }
+  }
+  
+  /* Responsive adjustments for small devices */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em; /* Further reduce headline font size */
+    }
+  
+    button {
+      font-size: 0.9em; /* Smallest font size for buttons */
+      padding: 5px 10px; /* Minimal padding for compact buttons */
+      width: 100%; /* Full-width buttons for better usability */
+      margin: 5px 0; /* Adjusted margin for stacked layout */
+    }
+  
+    .container {
+      margin-top: 20%;
+    }
+  }
+  /* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;    
+  }
+  
+  footer span {
+    font-weight: bold;
+  }
+  

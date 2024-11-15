@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Time</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffc0cb;
+      margin: 0;
+      padding: 0;
+    }
+
+    video {
+      width: 90%; /* Make the video responsive */
+      max-width: 640px; /* Set a maximum width */
+      margin-top: 20px;
+      border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    h1 {
+      margin-top: 5%;
+      font-size: 1.8rem; /* Responsive font size */
+    }
+
+    footer {
+      font-size: 0.9rem; /* Slightly smaller footer text */
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video autoplay with restricted controls -->
+  <video autoplay muted loop controlslist="nodownload nofastforward noremoteplayback" disablePictureInPicture>
+    <source src="videos/party.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h1>I knew it! You said YES! 🎉🎉</h1>
+
+  <footer>
+    <p>&copy; 2024 Design and Developed by <span>@code_a632</span></p>
+  </footer>
+</body>
+</html>
